@@ -10,15 +10,10 @@
         width: 100px;
         height: 100px;
         animation: mymove 5s infinite;
-        -webkit-animation: mymove 5s infinite;
         position: relative;
       }
 
     @keyframes firstcolor {
-      from {left: 0px;}
-      to {left: 800px;}
-      }
-    @-webkit-keyframes firstcolor {
       from {left: 0px;}
       to {left: 800px;}
       }
@@ -33,22 +28,11 @@
             left: 800px
       }
     }
-    @-webkit-keyframes secondcolor {
-      from {
-            background-color: red; 
-            left: 0px;
-      }
-      to {
-            background-color: yellow; 
-            left: 800px
-      }
-    }
 
     /* Standard syntax */
     #div1 {
           background-color: pink;
           animation: firstcolor 5s infinite;
-          -webkit-animation: firstcolor 5s infinite;
           animation-timing-function: linear;
           }
     #div2 {
@@ -57,7 +41,6 @@
     #div3 {
           animation-timing-function: ease-in;
           animation-name: secondcolor;
-          -webkit-animation-name: secondcolor;
           animation-duration: 4s;
           }      
     #div4 {
@@ -70,13 +53,6 @@
 
 
 /* Standard syntax */
-    @-webkit-keyframes mymove {
-        0% {background-color: red;}
-        25% {background-color: yellow;}
-        50% {background-color: blue;}
-        75% {background-color: pink;}
-        100% {background-color: green;}
-    } 
     @keyframes mymove {
         0% {background-color: red;}
         25% {background-color: yellow;}
