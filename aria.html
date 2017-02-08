@@ -1,136 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style> 
+  <head>
+    <style> 
 
+    div {
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        width: 100px;
+        height: 100px;
+        animation: mymove 5s infinite;
+        -webkit-animation: mymove 5s infinite;
+      }
 
+    @keyframes firstcolor {
+      from {left: 0px;}
+      to {left: 800px;}
+      }
 
+    @keyframes secondcolor {
+      from {
+            background-color: red; 
+            left: 0px;
+      }
+      to {
+            background-color: yellow; 
+            left: 800px
+      }
+    }
 
-
-div {
-
-width: 100px;
-
-height: 100px;
-
-border-radius:50%;
-
-width: 100px;
-
-height: 100px;
-
-animation: mymove 5s infinite;
-
-}
-
-
-
-@keyframes firstcolor {
-
-from {left: 0px;}
-
-to {left: 800px;}
-
-}
-
-
-
-@keyframes secondcolor {
-
-from {background-color: red; left: 0px;}
-
-to {background-color: yellow; left: 800px}
-
-}
-
-#div1 {-webkit-animation-timing-function: linear;}
-
-
-
-/* Standard syntax */
-
-#div1 {
-
-background-color: pink;
-
-animation: firstcolor 5s infinite;
-
-animation-timing-function: linear;
-
-}
-
-#div2 {animation-timing-function: ease;}
-
-#div3 {animation-timing-function: ease-in;
-
-animation-name: secondcolor;
-
-animation-duration: 4s;}
-
-#div4 {animation-timing-function: ease-out;}
-
-#div5 {animation-timing-function: ease-in-out;}
+    /* Standard syntax */
+    #div1 {
+          background-color: pink;
+          animation: firstcolor 5s infinite;
+          animation-timing-function: linear;
+          }
+    #div2 {
+          animation-timing-function: ease;
+          }
+    #div3 {
+          animation-timing-function: ease-in;
+          animation-name: secondcolor;
+          animation-duration: 4s;
+          }      
+    #div4 {
+          animation-timing-function: ease-out;
+          }
+    #div5 {
+          animation-timing-function: ease-in-out;
+          }
 
 
 
 /* Standard syntax */
-
-@keyframes mymove {
-
-0% {background-color: red;}
-
-25% {background-color: yellow;}
-
-50% {background-color: blue;}
-
-75% {background-color: pink;}
-
-100% {background-color: green;}
-
-} 
-
-
-
+    @keyframes mymove {
+        0% {background-color: red;}
+        25% {background-color: yellow;}
+        50% {background-color: blue;}
+        75% {background-color: pink;}
+        100% {background-color: green;}
+    } 
 </style>
-
 </head>
-
 <body style="background-color:paleturquoise;">
-
-
-
-
-
-/* Standard syntax */
-
-
-
 <h1>Aria's Webpage is AWESOME!</h1>
-
 <h2>I love Coding Club</h2>
 
 <div id="div1">If you are on this then share it with someone else!</div>
-
 <div id="div2">I hope you are having a good day.</div>
-
 <div id="div3">Remember that you are very unique!</div>
-
 <div id="div4">Know that you are worth it.</div>
-
 <div id="div5">Joy is a choice that is good for everyone.</div>
 
-
-
-
-
 <p style="background-color:thistle;">
-
 On 1-31-17 I edited my webpage and tried some animations on it. I am learning how to html code every once in a while in coding club and 
-
 am hoping to someday actually create my own website for my necklace selling business. In my small business I make necklaces with 
-
 sometimes valuable materials such as pearls and precious stones. I make a whole stock of necklaces and go to fairs to sell them. 
-
 </p>
 
 <p style="background-color:lavender;">
@@ -202,20 +147,5 @@ I am going to make a visionboard to hang in my room that helps me reach my goals
 I would like to create a website using html code.
 
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>
