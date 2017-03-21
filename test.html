@@ -16,16 +16,31 @@ div {
     50%  {top: 800px; animation-timing-function: ease-out;}
     100% {top: 0px; animation-timing-function: ease-in;}
 }
+@keyframes mymoveSide {
+    0%   {top: 0px; animation-timing-function: ease-in;}
+    50%  {top: 800px; left:400px; animation-timing-function: ease-out;}
+    100% {top: 0px; animation-timing-function: ease-in;}
+}
 
 #circle {
     background: #f00;
     border-radius: 50%;
+    top: 0px;
+    left: 0px;
+}
+#sideCircle {
+    background: #f00;
+    border-radius: 50%;
+    top: 0px;
+    left: 50px;
+    animation: mymoveSide 2s infinite;
 }
 </style>
 </head>
 <body>
 
 <div id="circle"></div>
+<div id="sideCircle"></div>
 
 </body>
 </html>
